@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Memorize - Main</title>
+        <link rel="stylesheet" href="Main.css">
+        <script src="Main.js" defer></script>
+    </head>
+    <body>
+        <div class="Choisir_des_sessions">
+            <h2 class="Title">CHOOSE SESSIONS TO MEMORISE</h2>
+            <div class="Session" id="Case1" onclick="Buff(1)">
+                <label class="session-label">Session 1</label>
+            </div>
+            <div class="Session" id="Case2" onclick="Buff(2)">
+                <label class="session-label">Session 2</label>
+            </div>
+            <div class="Session" id="Case3" onclick="Buff(3)">
+                <label class="session-label">Session 3</label>
+            </div>
+            <div class="Session" id="Case4" onclick="Buff(4)">
+                <label class="session-label">Session 4</label>
+            </div>
+            <div class="Session" id="Case5" onclick="Buff(5)">
+                <label class="session-label">Session 5</label>
+            </div>
+            <div class="Session" id="Case6" onclick="Buff(6)">
+                <label class="session-label">Session 6</label>
+            </div>
+            <div class="Session" id="Case7" onclick="Buff(7)">
+                <label class="session-label">Session 7</label>
+            </div>
+            <button class="Session" id="startButton" onclick="Start()">Start</button>
+        </div>
+
+        <div class="Questions">
+            <div class="Guess">
+                <button id="abandonner" onclick="Abandonner()">Surrender</button>
+                <textarea id="questionBox" placeholder="Guess" oninput="test()"></textarea>
+            </div>
+            
+            <div class="row1">
+                <div class="bloc">
+                    <h1 id="bloc1" class="word">Word</h1>
+                </div>
+                <div class="bloc">
+                    <h1 id="bloc2" class="word">Word</h1>
+                </div>
+                <div class="bloc">
+                    <h1 id="bloc3" class="word">Word</h1>
+                </div>
+            </div>
+
+            <div class="row2">
+                <div class="bloc">
+                    <h1 id="bloc4" class="word">Word</h1>
+                </div>
+                <div class="bloc">
+                    <h1 id="bloc5" class="word">Word</h1>
+                </div>
+                <div class="bloc">
+                    <h1 id="bloc6" class="word">Word</h1>
+                </div>
+            </div>
+
+            <div class="row3">
+                <div class="bloc">
+                    <h1 id="bloc7" class="word">Word</h1>
+                </div>
+                <div class="bloc">
+                    <h1 id="bloc8" class="word">Word</h1>
+                </div>
+                <div class="bloc">
+                    <h1 id="bloc9" class="word">Word</h1>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
